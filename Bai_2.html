@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+
+</body>
+</html>
+<script>
+
+    //Cách 1: dùng For
+    // function check_arr(){
+    //     let arr = [10, 20, -4, -10, 21, -1, 20, -10, 4, 10];
+    //     let num = parseInt(prompt("input int num V: "));
+    //     for (let i = 0; i < arr.length; i ++){
+    //         if (arr[i] === num)  {
+    //             alert(`số ${num} có trong mảng`);
+    //             break;
+    //         }
+    //     }
+    // }
+    // check_arr()
+
+    //Cách 2: dùng indexOf
+    function checkArr () {
+        let arr = [10, 20, -4, -10, 21, -1, 20, -10, 4, 10];
+        let num = parseInt(prompt("input int num V: "));
+        if (arr.indexOf(num) === -1) {
+            alert(`số ${num} không có trong mảng`);
+        }
+        else {
+            alert(`số ${num} có trong mảng`);
+        }
+    }
+    checkArr()
+
+
+
+
+</script>

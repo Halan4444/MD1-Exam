@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+</html>
+<script >
+    var str = 'tôi yêu codegym'
+    var arr = str.split('');
+
+    function countNumber() {
+        let nguyenam = ["a", "o", "e", "u", "i"];
+        let count = 0;
+        for (let i = 0; i < arr.length; i++) {
+            for (let j=0; j< nguyenam.length;j++) {
+                if (nguyenam[j] == arr[i]) {
+                    count++;
+                }
+            }
+
+        }
+        alert('Mảng có ' + count +' nguyên âm');
+    }
+    countNumber();
+</script>
